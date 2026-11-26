@@ -17,20 +17,29 @@
   sekilas; (4) hantuannya spesifik dan segar; (5) dalam batas karakter dan
   bersih dibaca keras.
 
-## Baris final
+## Baris final (v3 — 26 Nov 2026 ~14:52 WIB)
 
-> DO NOT UNPLUG THE GHOST. IT IS THE ONLY ONE WHO KNOWS WHERE THE BACKUPS ARE.
+> DO NOT UNPLUG THE GHOST. IT IS THE ONLY ONE WHO REMEMBERS THE BACKUP PASSWORD.
 
-- Jumlah karakter: **76** (batas 120)
-- Ide: hantu bukan pengganggu server — ia satu-satunya yang tahu di mana
-  backup disimpan. Ketakutan terbesar sysadmin bukan hantu, melainkan backup
-  yang hilang. Draf v1 yang ditolak beserta analisis cacatnya ada di komentar
-  `main.ts`.
+- Jumlah karakter: **78** (batas 120)
+- Ide: hantu bukan pengganggu server — ia satu-satunya yang mengingat kata
+  sandi backup. Ketakutan terbesar sysadmin bukan hantu, melainkan backup
+  yang tidak bisa dibuka.
+- Revisi v3: paruh kedua v2 ("KNOWS WHERE THE BACKUPS ARE") terlalu samar —
+  backup menurut definisinya disimpan di tempat yang diketahui, jadi
+  punchline mengandalkan imajinasi pembaca. Diganti detail konkret
+  "REMEMBERS THE BACKUP PASSWORD": taruhan langsung jelas, dan "REMEMBERS"
+  lebih pas untuk hantu. Draf v1 yang ditolak + analisis cacat v1/v2/v3 ada
+  di komentar `main.ts`.
+- Commit v3: `2e2bbf9339ea81f3c72d13dc65cd34efa0c4b187` ("Revisi v3: backup
+  password, bukan lokasi backup (78 chars)") — remote HEAD terverifikasi =
+  commit lokal (git ls-remote). Catatan: branch repo ini `main`, bukan
+  `master`.
 
 ## Repo
 
 - URL: https://github.com/h05meigames/makefun-haunted-server-sign
-- Commit final: `71aafca168d12db1e889395c464f7c3431c0cede`
+- Commit final: `2e2bbf9339ea81f3c72d13dc65cd34efa0c4b187` (v3, branch `main`)
 - Remote HEAD terverifikasi = commit lokal (git ls-remote)
 - Repo publik, About homepage https://make.fun, topic `makefun`
 - README memuat 3 badge live make.fun (bounty .svg, rank.svg, reward.svg),
@@ -41,8 +50,8 @@
 
 ## Hasil verifikasi
 
-- `node main.ts` jalan: mencetak baris final + `characters: 76`
-- `/output/entry.txt` persis berisi satu baris final, 76 karakter, satu baris,
+- `node main.ts` jalan: mencetak baris final + `characters: 78`
+- `/output/entry.txt` persis berisi satu baris final, 78 karakter, satu baris,
   bukan hanya whitespace — lolos gate (UTF-8, 1–120 karakter)
 - `package.json`: {"name":"makefun-haunted-server-sign","private":true,"type":"module"}
 
