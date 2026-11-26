@@ -8,9 +8,9 @@ Entry for the make.fun bounty [Funniest Sign on a Haunted Server Room Door](http
 
 ## The sign
 
-> DO NOT UNPLUG THE GHOST. IT IS THE ONLY ONE WHO KNOWS WHERE THE BACKUPS ARE.
+> DO NOT UNPLUG THE GHOST. IT IS THE ONLY ONE WHO REMEMBERS THE BACKUP PASSWORD.
 
-**76 characters** — within the 120-character limit.
+**78 characters** — within the 120-character limit.
 
 ## Run it
 
